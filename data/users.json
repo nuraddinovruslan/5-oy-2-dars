@@ -1,0 +1,16 @@
+[
+    {
+        "id": "ef78276b-109c-4734-8e66-3eb22b2ec136",
+        "username": "ali",
+        "email": "nuraddinovruslan76@gmail.com",
+        "role": "user",
+        "password": "$2b$12$B9BjksKn6UfhaxNcFbHGCe3FYDdrkoYqSBGo5/lmMzVYwKStsXGZ6"
+    },
+    {
+        "id": "71b03b4e-0f3a-4bcb-a1e5-b2c297011364",
+        "username": "aii",
+        "email": "nuraddinovruslan76@gmail.co",
+        "role": "admin",
+        "password": "$2b$12$RdzfNHPRiTAsJHFva4czDOIUk/TAqiOPbshVm3.pTPlQLk2QRhmsO"
+    }
+]
