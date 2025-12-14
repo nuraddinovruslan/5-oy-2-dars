@@ -3,14 +3,17 @@ const { v4 } = require("uuid");
 
 const addproduct = async (req, res) => {
   try {
-    const { product_name, amount, price } = req.body;
+    const { landshaft, plants, animals, sky, img_url } = req.body;
     const filedata = read_file("product.json");
 
     filedata.push({
       id: v4(),
-      product_name,
-      amount,
-      price,
+      landshaft,
+      plants,
+      animals,
+      sky,
+      img_url
+
     });
 
     write_file("product.json", filedata);
@@ -59,7 +62,7 @@ const oneproduct = async (req, res) => {
 
 const updateproduct = async (req, res) => {
   try {
-    const { product_name, amount, price } = req.body;
+    const { landshaft, plants, animals, sky } = req.body;
     const { id } = req.params;
 
     const filedata = read_file("product.json");
@@ -73,9 +76,10 @@ const updateproduct = async (req, res) => {
 
     filedata.forEach((item) => {
       if (item.id === id) {
-        item.product_name = product_name ? product_name : item.product_name;
-        item.amount = amount ? amount : item.amount;
-        item.price = price ? price : item.price;
+        item.landshaft = landshaft ? landshaft : item.landshaft;
+        item.plants = plants ? plants : item.plants;
+        item.animals = animals ? animals : item.animals;
+        item.sky = sky ? sky : item.sky
       }
     });
 

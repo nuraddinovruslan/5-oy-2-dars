@@ -4,10 +4,10 @@ const authorization = require("../middleware/authorization")
 
 const productrouter = Router()
 
-productrouter.post("/add_product", authorization, addproduct)
+productrouter.post("/add_product", addproduct)
 productrouter.get("/all_product", allproduct)
 productrouter.get("/one_product/:id", oneproduct)
-productrouter.put("/update_product/:id", authorization, updateproduct)
-productrouter.delete("/delete_product/:id", authorization, deleteproduct)
+productrouter.put("/update_product/:id", updateproduct)
+productrouter.delete("/delete_product/:id",  deleteproduct)
 
 module.exports = productrouter
