@@ -96,8 +96,6 @@ function App() {
         <input name="plants" value={formData.plants} onChange={handleChange} placeholder="Plants" required />
         <input name="animals" value={formData.animals} onChange={handleChange} placeholder="Animals" required />
         <input name="sky" value={formData.sky} onChange={handleChange} placeholder="Sky" required />
-
-        {/* Faqat rasm fayllarini qabul qiladi */}
         <input
           type="file"
           accept="image/*"
